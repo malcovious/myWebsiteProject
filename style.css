@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
 body
 {
   padding: 30px;
@@ -59,4 +61,26 @@ ul
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
+}
+.background-layer {
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1470181002772-82478d164015?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  margin: 0;
+}
+
+.foreground-layer {
+  z-index: 1;
+  width: 45vw;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.85);
+}
+* {
+  font-family: "Roboto Mono";
+  margin: 0;
+  padding: 0;
 }
