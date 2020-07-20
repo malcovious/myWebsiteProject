@@ -10,9 +10,27 @@ body
   margin: auto;
   text-align: center;
 }
+ol
+{
+  list-style-type: none;
+}
 ul
 {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li
+{
+  float: left;
+}
+li a
+{
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+  text-align: center;
 }
 .grid-container
 {
@@ -65,7 +83,7 @@ ul
 .background-layer {
   z-index: -1;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: url("https://images.unsplash.com/photo-1470181002772-82478d164015?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   background-repeat: no-repeat;
   background-position: 0 0;
