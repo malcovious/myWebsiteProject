@@ -5,11 +5,34 @@ function fromDec(base, num)
     var left;
     while (count > 0)
     {
-        left = num % base;
-        count = ~~(num/base);
+        left = num % base; //remander for conversion  
+        count = ~~(num/base); 
         num = count;
-        result +=  convNum(left);
+        result +=  convNum(left); //converts for hex values. Does nothing for 0-9
     }
+    return result.split("").reverse().join("");
+}
+
+function toDec(base, num)
+{
+    var result = 0;
+    var toAdd ;
+    var temp = num.toString();
+    var number = temp.split('').reverse();
+    for (let i = 0; i < number.length ; i ++)
+    {
+        toAdd = parseInt(number[i], 16);
+        result += toAdd * Math.pow(base, i);
+
+    }
+    return result;
+}
+
+function baseToBase(num, base, from)
+{
+    var result; 
+    var temp =  toDec(from, num);
+    result = fromDec(base, temp);  
     return result;
 }
 
@@ -26,7 +49,3 @@ function convNum(num)
         default : return num.toString(); 
     }
 }
-
-console.log(fromDec(2, 25));
-console.log(fromDec(8, 25));
-console.log(fromDec(16, 15));
