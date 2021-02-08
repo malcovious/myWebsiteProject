@@ -49,3 +49,14 @@ function convNum(num)
         default : return num.toString(); 
     }
 }
+
+function choice(picked)
+{
+    switch(picked)
+    {
+        case binary: return 2;
+        case octal: return 8;
+        case hex: return 16;
+        default: return 10;
+    }
+}
