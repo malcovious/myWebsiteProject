@@ -3,18 +3,35 @@
     <head>
         <title> Base Converter </title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script type= "text/javascript" src= "converter.js"></script>
+
     </head>
     <h1> Base converter </h1>
     <body>
+           <label for="toConvert"> Please input value to convert unsigned only</label>
+           <input type="text" id="toConvert" name="toConvert"> 
+           <br>
         <form>
-           <label for="start"> Choose starting base:</label>
-           <select id="start" name="start">
-                <option value="binary">Binary</option>
-                <option value="octal">Octal</option>
-                <option value="hex">Hexadecimal</option>
-                <option value="decimal">Decimal</option>
-            </select>
+           <p> Select the base of number </p>
+           <br>
+           <input type= "radio" name= "start" value= "binary"> Binary
+           <input type= "radio" name= "start" value= "octal"> Octal
+           <input type= "radio" name= "start" value= "hex"> Hexadecimal
+           <input type= "radio" name= "start" value= "decimal"> Decimal
+           <br>
+        </form>    
+            <label for="finished"> Converted number </label>
+            <input type="text" id="finished" name="finished">
+            <br>
+        <form>
+           <p> Select the base of number </p>
+           <br>
+           <input type= "radio" name= "end" value= "binary"> Binary
+           <input type= "radio" name= "end" value= "octal"> Octal
+           <input type= "radio" name= "end" value= "hex"> Hexadecimal
+           <input type= "radio" name= "end" value= "decimal"> Decimal
+           <br>
         </form>
+        <button onclick="clicked()"> Convert </button>
+        <script type= "text/javascript" src= "converter.js"></script>
     </body>
 </html>

@@ -50,6 +50,20 @@ function convNum(num)
     }
 }
 
+function getResult(toSearch)
+{
+    var radios = document.getElementById(toSearch);
+    for(var i =0, length = radios.length; i < length; i++)
+    {
+        if( radios[i].checked)
+        {
+            var base = choice(i);
+            break;
+        }
+        return base
+    }
+}
+
 function choice(picked)
 {
     switch(picked)
@@ -59,4 +73,14 @@ function choice(picked)
         case hex: return 16;
         default: return 10;
     }
+}
+
+function clicked()
+{
+ 
+    var fstBase = getResult("start"); 
+    var lstBase = getResult("end");
+    var num = document.getElementById(toConvert).value;
+    var converted = baseToBase(num, lstBase, fstBase);
+    document.getElementById(finished).value = converted;
 }
