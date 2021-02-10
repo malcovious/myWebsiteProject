@@ -13,10 +13,10 @@
         <form>
            <p> Select the base of number </p>
            <br>
-           <input type= "radio" name= "start" value= "binary"> Binary
-           <input type= "radio" name= "start" value= "octal"> Octal
-           <input type= "radio" name= "start" value= "hex"> Hexadecimal
-           <input type= "radio" name= "start" value= "decimal"> Decimal
+           <input type= "radio" name="start" value= "binary" onChange="setFirst('binary')"> Binary
+           <input type= "radio" name="start" value= "octal" onChange="setFirst('octal')"> Octal
+           <input type= "radio" name="start" value= "hex" onChange="setFirst('hex')"> Hexadecimal
+           <input type= "radio" name="start" value= "decimal" onChange="setFirst('decimal')"> Decimal
            <br>
         </form>    
             <label for="finished"> Converted number </label>
@@ -25,10 +25,10 @@
         <form>
            <p> Select the base of number </p>
            <br>
-           <input type= "radio" name= "end" value= "binary"> Binary
-           <input type= "radio" name= "end" value= "octal"> Octal
-           <input type= "radio" name= "end" value= "hex"> Hexadecimal
-           <input type= "radio" name= "end" value= "decimal"> Decimal
+           <input type= "radio" name="end" value= "binary" onChange="setLast('binary')"> Binary
+           <input type= "radio" name="end" value= "octal" onChange="setLast('octal')"> Octal
+           <input type= "radio" name="end" value= "hex" onChange="setLast('hex')"> Hexadecimal
+           <input type= "radio" name="end" value= "decimal" onChange="setLast('decimal')"> Decimal
            <br>
         </form>
         <button onclick="clicked()"> Convert </button>

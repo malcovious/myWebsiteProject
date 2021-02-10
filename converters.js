@@ -1,3 +1,6 @@
+let first = null;
+let last = null;
+
 function fromDec(base, num) 
 {
     var result = ''; 
@@ -50,18 +53,14 @@ function convNum(num)
     }
 }
 
-function getResult(toSearch)
+function setFirst(val)
 {
-    var radios = document.getElementById(toSearch);
-    for(var i =0, length = radios.length; i < length; i++)
-    {
-        if( radios[i].checked)
-        {
-            var base = choice(i);
-            break;
-        }
-        return base
-    }
+	first = choice(val);
+}
+
+function setLast(val)
+{
+	last = choice(val);
 }
 
 function choice(picked)
@@ -77,10 +76,7 @@ function choice(picked)
 
 function clicked()
 {
- 
-    var fstBase = getResult("start"); 
-    var lstBase = getResult("end");
     var num = document.getElementById(toConvert).value;
-    var converted = baseToBase(num, lstBase, fstBase);
+    var converted = baseToBase(num, last, first);
     document.getElementById(finished).value = converted;
 }
