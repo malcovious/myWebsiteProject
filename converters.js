@@ -76,7 +76,7 @@ function setLast(val)
 
 function clicked()
 {
-    var num = document.getElementById(toConvert).value;
+    var num = document.getElementById("toConvert").value;
     var converted = baseToBase(num, last, first);
-    document.getElementById(finished).value = converted;
+    document.getElementById("finished").value = converted;
 }
