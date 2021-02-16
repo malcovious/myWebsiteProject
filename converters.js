@@ -53,16 +53,6 @@ function convNum(num)
     }
 }
 
-function setFirst(val)
-{
-	first = choice(val);
-}
-
-function setLast(val)
-{
-	last = choice(val);
-}
-
 function choice(picked)
 {
     switch(picked)
@@ -72,6 +62,16 @@ function choice(picked)
         case "hex": return 16;
         case "decimal": return 10;
     }
+}
+
+function setFirst(val)
+{
+	first = choice(val);
+}
+
+function setLast(val)
+{
+	last = choice(val);
 }
 
 function clicked()
