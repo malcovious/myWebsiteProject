@@ -5,25 +5,23 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <script defer type= "text/javascript" src= "./converters.js"></script>
     </head>
-    <div class ="center-div">
-        <h1> Base converter </h1>
-        <br>
-        <p> Please input value to convert  positive/unsigned only</p>
-    </div>
+    <h1> Base converter </h1>
+    <br>
+    <p> Please input value to convert  positive/unsigned only</p>
     <body>
         <div class ="center-div">
             <div class = "grid-container">
                 <div class = "grid-item">
-                    <input type="text" id="toConvert" name="toConvert"> 
                     <br>
                     <form>
+                        <label for="toConvert"> Enter here: </label>
+                        <input type="text" id="toConvert" name="toConvert"> 
                         <p> Select the base of number </p>
                         <br>
-                        <input type= "radio" name="start" value= "binary" onChange="setFirst('binary')"> Binary
-                        <input type= "radio" name="start" value= "octal" onChange="setFirst('octal')"> Octal
-                        <input type= "radio" name="start" value= "hex" onChange="setFirst('hex')"> Hexadecimal
-                        <input type= "radio" name="start" value= "decimal" onChange="setFirst('decimal')"> Decimal
-                        <br>
+                        <input type= "radio" name="start" value= "binary" onChange="setFirst('binary')"> Binary<br>
+                        <input type= "radio" name="start" value= "octal" onChange="setFirst('octal')"> Octal<br>
+                        <input type= "radio" name="start" value= "hex" onChange="setFirst('hex')"> Hexadecimal<br>
+                        <input type= "radio" name="start" value= "decimal" onChange="setFirst('decimal')"> Decimal<br>
                     </form>
                 </div> 
                 <div class ="grid-item">   
@@ -32,17 +30,14 @@
                     <br>
                     <form>
                         <p> Select the base of number </p>
-                        <br>
-                        <input type= "radio" name="end" value= "binary" onChange="setLast('binary')"> Binary
-                        <input type= "radio" name="end" value= "octal" onChange="setLast('octal')"> Octal
-                        <input type= "radio" name="end" value= "hex" onChange="setLast('hex')"> Hexadecimal
-                        <input type= "radio" name="end" value= "decimal" onChange="setLast('decimal')"> Decimal
-                        <br>
+                        <input type= "radio" name="end" value= "binary" onChange="setLast('binary')"> Binary<br>
+                        <input type= "radio" name="end" value= "octal" onChange="setLast('octal')"> Octal<br>
+                        <input type= "radio" name="end" value= "hex" onChange="setLast('hex')"> Hexadecimal<br>
+                        <input type= "radio" name="end" value= "decimal" onChange="setLast('decimal')"> Decimal<br>
                     </form>
                 </div>
             </div>
         </div>  
-
-        <button onclick="clicked()"> Convert </button>
+       <button onclick="clicked()"> Convert </button>
     </body>
 </html>
