@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Survey for cert form </title>
+    <link rel"stylesheet" href="../Survey.css">
+    <meta lang="en">
+  </head>
+  <body>
+    <h1 id="title"> Online survey form </h1>
+    <p id="description"> please fill in required information </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">
+          Name<input id="name" type="text" placeholder="John Smith" required >
+        <label>
+        <label id="number-label" for="number">
+          Age<input id="number" type="number" min="13" max="120" placeholder="13 or older.">
+        <label>
+        <label id="email-label" for="email">
+          Email<input id="email" type="email" placeholder="example@gmail.com" required>
+        </label> 
+        <label id="select-label" for="dropdown">How do you like this form
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Looks great</option>
+            <option value="2">Could use some work</option>
+            <option value="3">Looks bad</option>
+          <select>
+        </label>
+        <label for="choice 1">
+          <input id="choice 1" type="radio" name="choice" class="inline" value="pick 1">Pick me!
+        </label>
+        <label for="choice 2">
+          <input id="choice 2" type="radio" name="choice" class="inline" value="pick 2">No! Pick me!
+        </label>
+        <label for="1">
+          <input type="checkbox" id="1" name="check 1" class="inline" value="1 Picked">Check me!
+        </label>
+        <label for="2">
+          <input type="checkbox" id="2" name="check 2" class="inline" value="2 Picked">And or me!
+        </label>
+        <label for="3">
+          <input type="checkbox" id="3" name="check 3" class="inline" value="3 Picked">Maybe me too!
+        </label>
+        <label>
+          Additional comments
+          <textarea name="comments" placeholder="What would you suggest i add?"></textarea> 
+        </label>  
+      </fieldset>
+      <input type="submit" id="submit">
+    </form>
+  </body>
+</html>

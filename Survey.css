@@ -1,0 +1,63 @@
+body{
+    background-color: #211940
+}
+  
+h1, p, label{
+    color: f2f0f7;
+}
+  
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+  
+input, select, textarea {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+  
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+  
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+  
+fieldset {
+    border: none;
+    padding: 2rem 0;
+}
+  
+input[type="submit"]{
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3dd42c;
+    border-color: #9cd696;
+    min-width: 300px;
+}
+  
+input, textarea, select {
+    background-color: #9763e6;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+}
+  
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+  
+::placeholder {
+    color: #8ce366;
+}

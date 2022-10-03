@@ -1,0 +1,50 @@
+body {
+    background: linear-gradient(135deg, #ed28f0 0%, #2e1589 100%); 
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover auto;
+    overflow: scroll;
+  }
+  
+  h1, p , li, figcaption{
+    text-align: center;
+    color: white;
+  }
+  
+  li {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 5px;
+  
+  }
+  
+  img {
+      display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    max-height: 400px;
+    max-width: 100%;
+  }
+  
+  a:active {
+    color: orange;
+  }
+   
+  a:hover{
+     color: yellow;
+  }
+  
+  a:visited{
+    color: red;
+  }
+  
+  .more-info {
+    font-size: 20px;
+  }
