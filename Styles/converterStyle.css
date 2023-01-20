@@ -1,0 +1,26 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+  h1 {
+    text-align: center;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to right, #CBCE91FF, #EA738DFF);
+    }
+
+    form {
+        display : inline-block;
+        justify-content: center;
+    }
+
+    button {
+        display: block;
+        text-align: center;
+    }
+

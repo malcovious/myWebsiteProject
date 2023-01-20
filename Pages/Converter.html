@@ -3,45 +3,42 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Base Converter </title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="../Styles/converterStyle.css">
         <script defer type= "text/javascript" src= "../Code/converters.js"></script>
     </head>
-    <h1> Base converter </h1>
-    <br>
-    <p> Please input value to convert  positive/unsigned only</p>
+    <h1> Please input value to convert  positive/unsigned only</h1>
     <body>
-        <div class ="center-div">
-            <div class = "grid-container">
-                <div class = "grid-item">
-                    <br>
-                    <form>
-                        <label for="toConvert"> Enter here: </label>
-                        <input type="text" id="toConvert" name="toConvert"> 
-                        <p> Select the base of number </p>
-                        <br>
-                        <input type= "radio" name="start" value= "binary" onChange="setFirst('binary')"> Binary<br>
-                        <input type= "radio" name="start" value= "octal" onChange="setFirst('octal')"> Octal<br>
-                        <input type= "radio" name="start" value= "hex" onChange="setFirst('hex')"> Hexadecimal<br>
-                        <input type= "radio" name="start" value= "decimal" onChange="setFirst('decimal')"> Decimal<br>
-                    </form>
-                </div> 
-                <div class ="grid-item">   
-                    <br>
-                    <form>
-                        <p> Select the base of number </p>
-                        <input type= "radio" name="end" value= "binary" onChange="setLast('binary')"> Binary<br>
-                        <input type= "radio" name="end" value= "octal" onChange="setLast('octal')"> Octal<br>
-                        <input type= "radio" name="end" value= "hex" onChange="setLast('hex')"> Hexadecimal<br>
-                        <input type= "radio" name="end" value= "decimal" onChange="setLast('decimal')"> Decimal<br>
-                    </form>
-                </div>
-            </div>
-        </div>  
+        <form>
+            <fieldset>
+                <label for="toConvert"> Enter here: </label>
+                <input type="text" id="toConvert" name="toConvert">
+            </fieldset>
+            <fieldset>
+                <legend>Base</legend>
+                <input type= "radio" name="start" value= "binary" onChange="setFirst('binary')"  required> Binary<br>
+                <input type= "radio" name="start" value= "octal" onChange="setFirst('octal')" required> Octal<br>
+                <input type= "radio" name="start" value= "hex" onChange="setFirst('hex')" required> Hexadecimal<br>
+                <input type= "radio" name="start" value= "decimal" onChange="setFirst('decimal')" required> Decimal<br>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <label for="finished"> Converted number: </label>
+                <input type="text" id="finished" name="finished">
+            </fieldset>
+            <fieldset>
+                <legend>Converting to</legend>
+                <input type= "radio" name="end" value= "binary" onChange="setLast('binary')" required> Binary<br>
+                <input type= "radio" name="end" value= "octal" onChange="setLast('octal')" required> Octal<br>
+                <input type= "radio" name="end" value= "hex" onChange="setLast('hex')" required> Hexadecimal<br>
+                <input type= "radio" name="end" value= "decimal" onChange="setLast('decimal')" required> Decimal<br>
+            </fieldset>
+        </form>
+
        <button onclick="clicked()"> Convert </button>
-       <br>
-       <br>
-       <label for="finished"> Converted number </label>
-       <input type="text" id="finished" name="finished">
-       <p>Click<a href="Projects.html">Here</a> To return to my projects.</p>
+
+
+
+       <p>Click <a href="Projects.html">Here</a> To return to my projects.</p>
     </body>
 </html>
